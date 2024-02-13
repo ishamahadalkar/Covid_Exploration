@@ -21,7 +21,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/ishamahadalkar/Covid_Exploration">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="logo.jpeg" alt="Logo" >
   </a>
 
 <h3 align="center">COVID Exploration</h3>
@@ -30,8 +30,6 @@
     This project involved exploring COVID-19 data using SQL queries and analysis techniques. We aimed to uncover trends, patterns, and insights regarding infection rates, mortality rates, testing trends, and vaccination progress. 
     Through various SQL queries and data manipulation methods, we gained valuable insights into the pandemic's impact on different regions and demographics.
     <br />
-    <br />
-    <a href="https://github.com/ishamahadalkar/Covid_Exploration">View Demo</a>
   </p>
 </div>
 
@@ -64,72 +62,43 @@
 </details>
 
 
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![MySQL][MySQL.com]][MySQL-url]
+* [![MySQLWorkbench][MySQLWorkbench.com]][MySQLWorkbench-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+You will need to install MySQL Workbench or another similar SQL software to load the data and run the queries. Download and install MySQL Workbench from the official website if you haven't already.
+
+Make sure you have a MySQL database instance set up where you can import the provided SQL data. If you haven't already, install MySQL and create a database for this project.
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/ishamahadalkar/Covid_Exploration
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
+2. Set Up Your Database: Make sure you have a MySQL database instance set up where you can import the provided SQL data. If you haven't already, install MySQL and create a database for this project.
+   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- DATA SOURCES -->
 ## Data Sources
 
-List all the data sources used in the project, including links to the original data, descriptions of the data, and any pre-processing steps that were taken.
+The data was downloaded from the official site: https://ourworldindata.org/covid-deaths
 
 ### Preprocessing
 
+1. Created two separate files for CovidDeaths and CovidVaccinations from the original data for better organization and clarity.
+2. Standardized the date format to "yyyy-MM-dd" to ensure compatibility with SQL date format.
+3. Replaced empty values with NULL to facilitate easier data loading and to maintain data integrity during the import process.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,7 +106,9 @@ List all the data sources used in the project, including links to the original d
 <!-- APPROACH -->
 ## Approach
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+1. Conducted data preprocessing, including standardizing date formats and handling missing values, before loading the data into two separate tables.
+2. Verified the integrity of the tables by confirming that the data was correctly uploaded, leveraging the upload wizard in MySQL Workbench for efficient validation.
+3. Initiated exploratory analysis on the dataset, starting with basic queries and gradually progressing to more complex SQL queries to extract meaningful insights from the data.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -145,25 +116,28 @@ Use this space to show useful examples of how a project can be used. Additional 
 <!-- CODE STRUCTURE -->
 ## Code Structure
 
-Explain the code structure and how it is organized, including any significant files and their purposes. This will help others understand how to navigate your project and find specific components.
+- Exploration.sql: Contains SQL queries for data exploration and analysis.
+- CovidDeaths.csv: Dataset containing COVID-19 death statistics.
+- CovidVaccinations.csv: Dataset containing COVID-19 vaccination statistics.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- RESULTS AND EVALUATION -->
-## Results
+<!-- Lessons Learned -->
+## Lessons Learned
 
-Provide an overview of the results of your project, including any relevant metrics and graphs. Include explanations of any evaluation methodologies and how they were used to assess the quality of the model. You can also make it appealing by including any pictures of your analysis or visualizations.
-
+1. Learned how to import large files and encountered the challenges of dealing with tedious processes and errors. Cleaning the data and figuring out the import process took considerable time and effort.
+2. Learned about working with CSV files, including considerations for line encodings and the process of importing files into databases. Encountered challenges related to line encodings and gained experience in resolving them during the import process.
+3. Gained knowledge about common data types in SQL such as INTEGER, VARCHAR, DATE, and TIMESTAMP, and understanding when to use each based on the nature of the data being stored.
+4. Practiced techniques for manipulating and transforming data within SQL queries, including aggregation, filtering, and data cleaning operations.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE WORK -->
 ## Future Work
 
-Outline potential future work that can be done to extend the project or improve its functionality. This will help others understand the scope of your project and identify areas where they can contribute.
-
+For future work, utilizing Tableau for data visualization would enhance the analysis, offering dynamic visualizations to explore trends and patterns in the COVID-19 datasets. This integration would enable clearer communication of insights and facilitate deeper exploration of geographic, temporal, and demographic aspects of the data.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -191,11 +165,7 @@ Project Link: [https://github.com/ishamahadalkar/Covid_Exploration](https://gith
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Acknowledge any contributors, data sources, or other relevant parties who have contributed to the project. This is an excellent way to show your appreciation for those who have helped you along the way.
-
-* []()
-* []()
-* []()
+* [Our World in Data](https://ourworldindata.org/covid-deaths)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -203,18 +173,18 @@ Acknowledge any contributors, data sources, or other relevant parties who have c
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/ishamahadalkar/Covid_Exploration.svg?style=for-the-badge
+[contributors-url]: https://github.com/ishamahadalkar/Covid_Exploration/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ishamahadalkar/Covid_Exploration.svg?style=for-the-badge
+[forks-url]: https://github.com/ishamahadalkar/Covid_Exploration/network/members
+[stars-shield]: https://img.shields.io/github/stars/ishamahadalkar/Covid_Exploration.svg?style=for-the-badge
+[stars-url]: https://github.com/ishamahadalkar/Covid_Exploration/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ishamahadalkar/Covid_Exploration.svg?style=for-the-badge
+[issues-url]: https://github.com/ishamahadalkar/Covid_Exploration/issues
+[license-shield]: https://img.shields.io/github/license/ishamahadalkar/Covid_Exploration.svg?style=for-the-badge
+[license-url]: https://github.com/ishamahadalkar/Covid_Exploration/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://linkedin.com/in/isha-mahadalkar
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
@@ -232,3 +202,8 @@ Acknowledge any contributors, data sources, or other relevant parties who have c
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[MySQL.com]: https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white
+[MySQL-url]: https://www.mysql.com
+[MySQLWorkbench.com]: https://img.shields.io/badge/MySQL_Workbench-4479A1?style=for-the-badge&logo=mysql&logoColor=white
+[MySQLWorkbench-url]: https://www.mysql.com/products/workbench/
+
