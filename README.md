@@ -23,7 +23,9 @@
   <a href="https://github.com/ishamahadalkar/Covid_Exploration">
     <img src="logo.jpeg" alt="Logo" >
   </a>
-
+  
+<!-- Section Name tag -->
+<a name="#about-the-project"></a>
 <h3 align="center">COVID Exploration</h3>
 
   <p align="center">
@@ -52,15 +54,23 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#data-sources">Data Sources</a>
+      <ul>
+          <li><a href="#preprocessing">Preprocessing</a></li>
+      </ul>
+    </li>
+    <li><a href="#approach">Approach</a></li>
+    <li><a href="#code-structure">Code Structure</a></li>
+    <li><a href="#lessons-learned">Lessons Learned</a></li>
+    <li><a href="#future-work">Future Work</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
+<!-- Section Name tag -->
+<a name="#built-with"></a>
 
 ### Built With
 
@@ -73,13 +83,22 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
+<!-- Section Name tag -->
+<a name="#getting-started"></a>
+
 ### Prerequisites
+
+<!-- Section Name tag -->
+<a name="#prerequisites"></a>
 
 You will need to install MySQL Workbench or another similar SQL software to load the data and run the queries. Download and install MySQL Workbench from the official website if you haven't already.
 
 Make sure you have a MySQL database instance set up where you can import the provided SQL data. If you haven't already, install MySQL and create a database for this project.
 
 ### Installation
+
+<!-- Section Name tag -->
+<a name="#installation"></a>
 
 1. Clone the repo
    ```sh
@@ -92,9 +111,15 @@ Make sure you have a MySQL database instance set up where you can import the pro
 <!-- DATA SOURCES -->
 ## Data Sources
 
+<!-- Section Name tag -->
+<a name="#data-sources"></a>
+
 The data was downloaded from the official site: https://ourworldindata.org/covid-deaths
 
 ### Preprocessing
+
+<!-- Section Name tag -->
+<a name="#preprocessing"></a>
 
 1. Created two separate files for CovidDeaths and CovidVaccinations from the original data for better organization and clarity.
 2. Standardized the date format to "yyyy-MM-dd" to ensure compatibility with SQL date format.
@@ -106,6 +131,9 @@ The data was downloaded from the official site: https://ourworldindata.org/covid
 <!-- APPROACH -->
 ## Approach
 
+<!-- Section Name tag -->
+<a name="#approach"></a>
+
 1. Conducted data preprocessing, including standardizing date formats and handling missing values, before loading the data into two separate tables.
 2. Verified the integrity of the tables by confirming that the data was correctly uploaded, leveraging the upload wizard in MySQL Workbench for efficient validation.
 3. Initiated exploratory analysis on the dataset, starting with basic queries and gradually progressing to more complex SQL queries to extract meaningful insights from the data.
@@ -115,6 +143,9 @@ The data was downloaded from the official site: https://ourworldindata.org/covid
 
 <!-- CODE STRUCTURE -->
 ## Code Structure
+
+<!-- Section Name tag -->
+<a name="#code-structure"></a>
 
 - Exploration.sql: Contains SQL queries for data exploration and analysis.
 - CovidDeaths.csv: Dataset containing COVID-19 death statistics.
@@ -127,6 +158,9 @@ The data was downloaded from the official site: https://ourworldindata.org/covid
 <!-- Lessons Learned -->
 ## Lessons Learned
 
+<!-- Section Name tag -->
+<a name="#lessons-learned"></a>
+
 1. Learned how to import large files and encountered the challenges of dealing with tedious processes and errors. Cleaning the data and figuring out the import process took considerable time and effort.
 2. Learned about working with CSV files, including considerations for line encodings and the process of importing files into databases. Encountered challenges related to line encodings and gained experience in resolving them during the import process.
 3. Gained knowledge about common data types in SQL such as INTEGER, VARCHAR, DATE, and TIMESTAMP, and understanding when to use each based on the nature of the data being stored.
@@ -137,6 +171,9 @@ The data was downloaded from the official site: https://ourworldindata.org/covid
 <!-- FUTURE WORK -->
 ## Future Work
 
+<!-- Section Name tag -->
+<a name="#future-work"></a>
+
 For future work, utilizing Tableau for data visualization would enhance the analysis, offering dynamic visualizations to explore trends and patterns in the COVID-19 datasets. This integration would enable clearer communication of insights and facilitate deeper exploration of geographic, temporal, and demographic aspects of the data.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -144,6 +181,9 @@ For future work, utilizing Tableau for data visualization would enhance the anal
 
 <!-- LICENSE -->
 ## License
+
+<!-- Section Name tag -->
+<a name="#license"></a>
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
@@ -153,6 +193,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 ## Contact
+
+<!-- Section Name tag -->
+<a name="#contact"></a>
 
 Your Name - [@LinkedIn]([linked-url]) - mahadalkar.isha@gmail.com
 
@@ -164,6 +207,9 @@ Project Link: [https://github.com/ishamahadalkar/Covid_Exploration](https://gith
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
+
+<!-- Section Name tag -->
+<a name="#acknowledgments"></a>
 
 * [Our World in Data](https://ourworldindata.org/covid-deaths)
 
